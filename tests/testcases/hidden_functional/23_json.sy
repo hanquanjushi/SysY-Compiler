@@ -1,0 +1,28 @@
+ 
+int main() {
+  int get = getch();
+  int i = 0;
+  while (get != 35) {
+    buffer[i] = get;
+    i = i + 1;
+    get = getch();
+  }
+  skip_space(buffer, i);
+  int res = detect_item(0, buffer, i);
+  skip_space(buffer, i);
+  if (res != 0) {
+    putch(111);
+    putch(107);
+    putch(10);
+    return 0;
+  } else {
+    putch(110);
+    putch(111);
+    putch(116);
+    putch(32);
+    putch(111);
+    putch(107);
+    putch(10);
+    return 1;
+  }
+}
