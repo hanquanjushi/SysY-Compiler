@@ -1,5 +1,5 @@
 ; ModuleID = 'cminus'
-source_filename = "/home/hq/SysY/tests/testcases/func/66_exgcd.sy"
+source_filename = "/home/hq/SysY_compiler/tests/testcases/func/66_exgcd.sy"
 
 declare i32  @getint()
 

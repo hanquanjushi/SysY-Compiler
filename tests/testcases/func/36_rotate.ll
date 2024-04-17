@@ -1,5 +1,5 @@
 ; ModuleID = 'cminus'
-source_filename = "/home/hq/SysY/tests/testcases/func/36_rotate.sy"
+source_filename = "/home/hq/SysY_compiler/tests/testcases/func/36_rotate.sy"
 
 @MAX_WIDTH = constant i32  1024
 @MAX_HEIGHT = constant i32  1024

@@ -1,5 +1,5 @@
 ; ModuleID = 'cminus'
-source_filename = "/home/hq/SysY/tests/testcases/func/08_global_arr_init.sy"
+source_filename = "/home/hq/SysY_compiler/tests/testcases/func/08_global_arr_init.sy"
 
 @a0 = global [3 x i32 ] [i32  zeroinitializer, i32  zeroinitializer, i32  zeroinitializer]
 @b0 = global [4 x i32 ] [i32  0, i32  1, i32  zeroinitializer, i32  zeroinitializer]

@@ -37,7 +37,7 @@ syntax_tree_node *node(const char *node_name, int children_num, ...);
 
 /* TODO: Your tokens here. */
 %token <node> ERROR ADD SUB MUL EXC DIV LT LTE GT GTE EQ NEQ ASSIGN SEMICOLON COMMA LPAREN RPAREN LBRACKET RBRACKET LBRACE RBRACE ELSE IF INT RETURN VOID WHILE FLOAT PER Ident IntConst FloatConst BREAK CONST CONTINUE OR AND
-%type <node>  STARTPOINT CompUnit GlobalDecl ArrayParamList ConstDecl VarDefList VarDecl  VarDef   InitVal InitValList FuncDef FuncFParams FuncFParam ArrayExpList BlockItemList ComExp Block BlockItem Stmt Exp Cond LVal PrimaryExp UnaryExp UnaryOp FuncRParams MulExp AddExp RelExp EqExp LAndExp LOrExp  
+%type <node>  STARTPOINT CompUnit GlobalDecl  ArrayParamList ConstDecl VarDefList VarDecl  VarDef   InitVal InitValList FuncDef FuncFParams FuncFParam ArrayExpList BlockItemList ComExp Block BlockItem Stmt Exp Cond LVal PrimaryExp UnaryExp UnaryOp FuncRParams MulExp AddExp RelExp EqExp LAndExp LOrExp  
 
 %start STARTPOINT
 
@@ -162,8 +162,9 @@ FuncDef:   INT Ident LPAREN FuncFParams RPAREN Block
     $$ = node("FuncDef", 6, $1, $2, $3, $4, $5, $6);
 }
 
- 
-FuncFParams: FuncFParams COMMA FuncFParam 
+  
+
+FuncFParams: FuncFParams COMMA FuncFParam
 {
     $$ = node("FuncFParams", 3, $1, $2, $3);
 }
@@ -171,9 +172,9 @@ FuncFParams: FuncFParams COMMA FuncFParam
 {
     $$ = node("FuncFParams", 1, $1);
 }
-|
-{
+| {
     $$ = node("FuncFParams", 0);
+
 }
 
 FuncFParam: INT Ident
@@ -194,7 +195,7 @@ FuncFParam: INT Ident
 }
 
 ArrayParamList:ArrayParamList LBRACKET Exp RBRACKET{
-    $$ = node("ArrayParamList", 3, $1, $2, $3);
+    $$ = node("ArrayParamList", 4, $1, $2, $3,$4);
   }
   | LBRACKET Exp RBRACKET{
     $$ = node("ArrayParamList", 3, $1, $2, $3);

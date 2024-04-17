@@ -255,35 +255,37 @@ ASTNode *AST::transform_node_iter(syntax_tree_node *n)
     }
     */
     /*
-    FuncFParams: FuncFParams COMMA FuncFParam
-    {
-     $$ = node("FuncFParams", 3, $1, $2, $3);
-    }
-    | FuncFParam
-    {
-     $$ = node("FuncFParams", 1, $1);
-    }
-    |
-    {
-     $$ = node("FuncFParams", 0);
-    }
 
-    FuncFParam: INT Ident
-    {
-     $$ = node("FuncFParam", 2, $1, $2);
-    }
-    | FLOAT Ident
-    {
-     $$ = node("FuncFParam", 2, $1, $2);
-    }
-    | INT Ident   ArrayParamList
-    {
-     $$ = node("FuncFParam",  3, $1, $2, $3);
-    }
-    | FLOAT Ident   ArrayParamList
-    {
-     $$ = node("FuncFParam",  3, $1, $2, $3);
-    }
+FuncFParams: FuncFParams COMMA FuncFParam
+{
+    $$ = node("FuncFParams", 3, $1, $2, $3);
+}
+| FuncFParam
+{
+    $$ = node("FuncFParams", 1, $1);
+}
+| {
+    $$ = node("FuncFParams", 0);
+
+}
+
+FuncFParam: INT Ident
+{
+    $$ = node("FuncFParam", 2, $1, $2);
+}
+| FLOAT Ident
+{
+    $$ = node("FuncFParam", 2, $1, $2);
+}
+| INT Ident   ArrayParamList
+{
+    $$ = node("FuncFParam",  3, $1, $2, $3);
+}
+| FLOAT Ident   ArrayParamList
+{
+    $$ = node("FuncFParam",  3, $1, $2, $3);
+}
+
     */
     else if (_STR_EQ(n->name, "FuncDef"))
     {
@@ -311,7 +313,7 @@ ASTNode *AST::transform_node_iter(syntax_tree_node *n)
             return node;
         }
         auto node_child = n->children[3];
-        // FuncFParams : FuncFParams COMMA FuncFParam | FuncFParam
+        // FuncFParams : FuncFParams COMMA FuncFParam | FuncFParam | epsilon
         // 构建stack
         std::stack<syntax_tree_node *> q;
         while (node_child->children_num == 3)
@@ -319,6 +321,7 @@ ASTNode *AST::transform_node_iter(syntax_tree_node *n)
             q.push(node_child->children[2]);
             node_child = node_child->children[0];
         }
+
         q.push(node_child->children[0]);
         while (!q.empty())
         {
@@ -692,17 +695,16 @@ ASTNode *AST::transform_node_iter(syntax_tree_node *n)
                         }
                     }
                     else
-                    { 
-                    //03.141592653589793转换成0x400921FB60000000
-                      //利用std::hexfloat
-                          std::stringstream ss;
-                            ss << std::hexfloat << std::stof(name);
-                            std::string str = ss.str();
-                            //str是0x1.921fb6p+1
-                            //把str转成0x400921FB60000000
- 
+                    {
+                        // 03.141592653589793转换成0x400921FB60000000
+                        // 利用std::hexfloat
+                        std::stringstream ss;
+                        ss << std::hexfloat << std::stof(name);
+                        std::string str = ss.str();
+                        // str是0x1.921fb6p+1
+                        // 把str转成0x400921FB60000000
 
-                            num_node->f_val = std::stof(str);   
+                        num_node->f_val = std::stof(str);
                     }
                     node->number = std::shared_ptr<ASTNumber>(num_node);
                 }
@@ -939,6 +941,7 @@ Value *ASTPrinter::visit(ASTSTARTPOINT &node)
         global_def->accept(*this);
     }
     remove_depth();
+    return nullptr;
 }
 
 Value *ASTPrinter::visit(ASTFuncDef &node)

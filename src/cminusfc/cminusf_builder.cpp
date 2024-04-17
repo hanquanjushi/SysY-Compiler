@@ -178,6 +178,7 @@ Value *CminusfBuilder::visit(ASTFuncDef &node)
         {
             if (param->isarray)
             {
+                //int func( int b[][59] )
                 param_types.push_back(INT32PTR_T);
             }
             else
@@ -714,9 +715,10 @@ Value *CminusfBuilder::visit(ASTVarDef &node)
     }
     return nullptr;
 }
+ 
 Value *CminusfBuilder::visit(ASTFuncFParam &node)
 {
-    return nullptr;
+    return nullptr; 
 }
 Value *CminusfBuilder::visit(ASTExpStmt &node)
 {

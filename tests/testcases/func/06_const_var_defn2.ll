@@ -1,5 +1,5 @@
 ; ModuleID = 'cminus'
-source_filename = "/home/hq/SysY/tests/testcases/func/06_const_var_defn2.sy"
+source_filename = "/home/hq/SysY_compiler/tests/testcases/func/06_const_var_defn2.sy"
 
 @a = constant i32  10
 @b = constant i32  5

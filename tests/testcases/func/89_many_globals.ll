@@ -1,5 +1,5 @@
 ; ModuleID = 'cminus'
-source_filename = "/home/hq/SysY/tests/testcases/func/89_many_globals.sy"
+source_filename = "/home/hq/SysY_compiler/tests/testcases/func/89_many_globals.sy"
 
 @a0 = global i32  zeroinitializer
 @a1 = global i32  zeroinitializer
