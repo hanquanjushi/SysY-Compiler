@@ -1,5 +1,5 @@
 ; ModuleID = 'cminus'
-source_filename = "/home/hq/SysY/tests/testcases/functional/68_brainfk.sy"
+source_filename = "/home/hq/SysY_compiler/tests/testcases/functional/68_brainfk.sy"
 
 @TAPE_LEN = constant i32  65536
 @BUFFER_LEN = constant i32  32768

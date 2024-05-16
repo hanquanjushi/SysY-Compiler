@@ -1,5 +1,5 @@
 ; ModuleID = 'cminus'
-source_filename = "/home/hq/SysY/tests/testcases/functional/34_arr_expr_len.sy"
+source_filename = "/home/hq/SysY_compiler/tests/testcases/functional/34_arr_expr_len.sy"
 
 @N = constant i32  -1
 @arr = global [6 x i32 ] [i32  1, i32  2, i32  33, i32  4, i32  5, i32  6]

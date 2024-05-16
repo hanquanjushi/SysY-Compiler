@@ -1,5 +1,5 @@
 ; ModuleID = 'cminus'
-source_filename = "/home/hq/SysY/tests/testcases/functional/47_hex_oct_add.sy"
+source_filename = "/home/hq/SysY_compiler/tests/testcases/functional/47_hex_oct_add.sy"
 
 declare i32  @getint()
 

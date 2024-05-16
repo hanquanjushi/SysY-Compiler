@@ -1,5 +1,5 @@
 ; ModuleID = 'cminus'
-source_filename = "/home/hq/SysY/tests/testcases/functional/54_hidden_var.sy"
+source_filename = "/home/hq/SysY_compiler/tests/testcases/functional/54_hidden_var.sy"
 
 @b = global i32  5
 @c = global [4 x i32 ] [i32  6, i32  7, i32  8, i32  9]

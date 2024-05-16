@@ -1,5 +1,5 @@
 ; ModuleID = 'cminus'
-source_filename = "/home/hq/SysY/tests/testcases/functional/91_many_locals2.sy"
+source_filename = "/home/hq/SysY_compiler/tests/testcases/functional/91_many_locals2.sy"
 
 @n = global i32  zeroinitializer
 declare i32  @getint()

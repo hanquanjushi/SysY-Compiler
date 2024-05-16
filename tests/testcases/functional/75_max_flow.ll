@@ -1,5 +1,5 @@
 ; ModuleID = 'cminus'
-source_filename = "/home/hq/SysY/tests/testcases/functional/75_max_flow.sy"
+source_filename = "/home/hq/SysY_compiler/tests/testcases/functional/75_max_flow.sy"
 
 @INF = constant i32  1879048192
 @size = global [10 x i32 ] zeroinitializer

@@ -1,5 +1,5 @@
 ; ModuleID = 'cminus'
-source_filename = "/home/hq/SysY/tests/testcases/functional/99_matrix_tran.sy"
+source_filename = "/home/hq/SysY_compiler/tests/testcases/functional/99_matrix_tran.sy"
 
 @M = global i32  zeroinitializer
 @L = global i32  zeroinitializer

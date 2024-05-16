@@ -1,5 +1,5 @@
 ; ModuleID = 'cminus'
-source_filename = "/home/hq/SysY/tests/testcases/functional/64_calculator.sy"
+source_filename = "/home/hq/SysY_compiler/tests/testcases/functional/64_calculator.sy"
 
 @ints = global [10000 x i32 ] zeroinitializer
 @intt = global i32  zeroinitializer

@@ -1,5 +1,5 @@
 ; ModuleID = 'cminus'
-source_filename = "/home/hq/SysY/tests/testcases/functional/50_short_circuit.sy"
+source_filename = "/home/hq/SysY_compiler/tests/testcases/functional/50_short_circuit.sy"
 
 @g = global i32  0
 declare i32  @getint()

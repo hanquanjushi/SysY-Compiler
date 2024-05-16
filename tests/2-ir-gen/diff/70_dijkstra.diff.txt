@@ -1,0 +1,6 @@
+--- /home/hq/SysY_compiler/tests/2-ir-gen/output/70_dijkstra.txt	2024-04-18 01:55:32.788000000 +0000
++++ /home/hq/SysY_compiler/tests/testcases/functional/70_dijkstra.out	2024-04-09 07:14:00.933296906 +0000
+@@ -1,2 +1,2 @@
+-0 0 0 0 0 0 
++0 1 8 4 13 17 
+ 0

@@ -1,5 +1,5 @@
 ; ModuleID = 'cminus'
-source_filename = "/home/hq/SysY/tests/testcases/functional/28_while_test3.sy"
+source_filename = "/home/hq/SysY_compiler/tests/testcases/functional/28_while_test3.sy"
 
 @g = global i32  zeroinitializer
 @h = global i32  zeroinitializer

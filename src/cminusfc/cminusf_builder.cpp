@@ -198,7 +198,12 @@ Value *CminusfBuilder::visit(ASTFuncDef &node)
             }
         }
     }
-
+/*    Type *lValType;
+    for (int i = node.arr_len.size() - 1; i >= 0; i--)
+    {
+        auto *len = node.arr_len[i]->accept(*this);
+        lValType = ArrayType::get(lValType, ((ConstantInt *)len)->get_value());
+    }*/
     fun_type = FunctionType::get(ret_type, param_types);
     auto *func = Function::create(fun_type, node.id, module.get());
     scope.push(node.id, func);

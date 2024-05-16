@@ -1,5 +1,5 @@
 ; ModuleID = 'cminus'
-source_filename = "/home/hq/SysY/tests/testcases/functional/43_logi_assign.sy"
+source_filename = "/home/hq/SysY_compiler/tests/testcases/functional/43_logi_assign.sy"
 
 @a = global i32  zeroinitializer
 @b = global i32  zeroinitializer

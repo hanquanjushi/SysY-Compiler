@@ -1,5 +1,5 @@
 ; ModuleID = 'cminus'
-source_filename = "/home/hq/SysY/tests/testcases/functional/08_const_array_defn.sy"
+source_filename = "/home/hq/SysY_compiler/tests/testcases/functional/08_const_array_defn.sy"
 
 @a = constant [5 x i32 ] [i32  0, i32  1, i32  2, i32  3, i32  4]
 declare i32  @getint()

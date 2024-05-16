@@ -1,5 +1,5 @@
 ; ModuleID = 'cminus'
-source_filename = "/home/hq/SysY/tests/testcases/functional/13_sub2.sy"
+source_filename = "/home/hq/SysY_compiler/tests/testcases/functional/13_sub2.sy"
 
 @a = constant i32  10
 declare i32  @getint()

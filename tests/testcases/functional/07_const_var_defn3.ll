@@ -1,5 +1,5 @@
 ; ModuleID = 'cminus'
-source_filename = "/home/hq/SysY/tests/testcases/functional/07_const_var_defn3.sy"
+source_filename = "/home/hq/SysY_compiler/tests/testcases/functional/07_const_var_defn3.sy"
 
 declare i32  @getint()
 

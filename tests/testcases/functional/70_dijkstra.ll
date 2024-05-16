@@ -1,5 +1,5 @@
 ; ModuleID = 'cminus'
-source_filename = "/home/hq/SysY/tests/testcases/functional/70_dijkstra.sy"
+source_filename = "/home/hq/SysY_compiler/tests/testcases/functional/70_dijkstra.sy"
 
 @INF = constant i32  65535
 @e = global [16 x [16 x i32 ]] zeroinitializer

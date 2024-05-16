@@ -1,0 +1,5 @@
+--- /home/hq/SysY_compiler/tests/2-ir-gen/output/93_nested_calls.txt	2024-04-18 01:55:52.092000000 +0000
++++ /home/hq/SysY_compiler/tests/testcases/functional/93_nested_calls.out	2024-04-09 07:14:00.933296906 +0000
+@@ -1 +1 @@
+-0
++250

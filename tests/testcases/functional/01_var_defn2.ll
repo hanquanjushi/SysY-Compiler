@@ -1,5 +1,5 @@
 ; ModuleID = 'cminus'
-source_filename = "/home/hq/SysY/tests/testcases/functional/01_var_defn2.sy"
+source_filename = "/home/hq/SysY_compiler/tests/testcases/functional/01_var_defn2.sy"
 
 @a = global i32  3
 @b = global i32  5

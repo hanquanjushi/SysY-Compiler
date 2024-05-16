@@ -1,5 +1,5 @@
 ; ModuleID = 'cminus'
-source_filename = "/home/hq/SysY/tests/testcases/functional/92_register_alloc.sy"
+source_filename = "/home/hq/SysY_compiler/tests/testcases/functional/92_register_alloc.sy"
 
 @a1 = global i32  1
 @a2 = global i32  2

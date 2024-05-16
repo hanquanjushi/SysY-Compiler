@@ -1,5 +1,5 @@
 ; ModuleID = 'cminus'
-source_filename = "/home/hq/SysY/tests/testcases/functional/65_color.sy"
+source_filename = "/home/hq/SysY_compiler/tests/testcases/functional/65_color.sy"
 
 @maxn = constant i32  18
 @mod = constant i32  1000000007

@@ -1,5 +1,5 @@
 ; ModuleID = 'cminus'
-source_filename = "/home/hq/SysY/tests/testcases/functional/61_sort_test7.sy"
+source_filename = "/home/hq/SysY_compiler/tests/testcases/functional/61_sort_test7.sy"
 
 @buf = global [2 x [100 x i32 ]] zeroinitializer
 declare i32  @getint()

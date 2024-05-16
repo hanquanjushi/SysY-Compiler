@@ -1,5 +1,5 @@
 ; ModuleID = 'cminus'
-source_filename = "/home/hq/SysY/tests/testcases/functional/82_long_func.sy"
+source_filename = "/home/hq/SysY_compiler/tests/testcases/functional/82_long_func.sy"
 
 @SHIFT_TABLE = constant [16 x i32 ] [i32  1, i32  2, i32  4, i32  8, i32  16, i32  32, i32  64, i32  128, i32  256, i32  512, i32  1024, i32  2048, i32  4096, i32  8192, i32  16384, i32  32768]
 declare i32  @getint()

@@ -1,5 +1,5 @@
 ; ModuleID = 'cminus'
-source_filename = "/home/hq/SysY/tests/testcases/functional/76_n_queens.sy"
+source_filename = "/home/hq/SysY_compiler/tests/testcases/functional/76_n_queens.sy"
 
 @ans = global [50 x i32 ] zeroinitializer
 @sum = global i32  0

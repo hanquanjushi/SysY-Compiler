@@ -1,2 +1,8 @@
-36_rotate
+65_color
+69_expr_eval
+70_dijkstra
+71_full_conn
 88_many_params2
+93_nested_calls
+94_nested_loops
+95_float

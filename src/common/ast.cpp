@@ -390,6 +390,9 @@ FuncFParam: INT Ident
                 node->Exps.push_back(child_node2_shared);
                 break;
             }
+            if(child_node->children_num==2){
+                
+            }
         }
         // 把数组长度倒序
         std::reverse(node->Exps.begin(), node->Exps.end());

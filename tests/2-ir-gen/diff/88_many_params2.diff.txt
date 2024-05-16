@@ -1,5 +1,5 @@
---- /home/hq/SysY_compiler/tests/2-ir-gen/output/88_many_params2.txt	2024-04-17 10:45:27.775429072 +0000
-+++ /home/hq/SysY_compiler/tests/testcases/func/88_many_params2.out	2024-04-09 09:24:54.145948619 +0000
+--- /home/hq/SysY_compiler/tests/2-ir-gen/output/88_many_params2.txt	2024-04-18 01:55:50.852000000 +0000
++++ /home/hq/SysY_compiler/tests/testcases/functional/88_many_params2.out	2024-04-09 07:14:00.933296906 +0000
 @@ -1 +1,4 @@
 -127
 +0123000009

@@ -1,5 +1,5 @@
 ; ModuleID = 'cminus'
-source_filename = "/home/hq/SysY/tests/testcases/functional/63_big_int_mul.sy"
+source_filename = "/home/hq/SysY_compiler/tests/testcases/functional/63_big_int_mul.sy"
 
 @len = constant i32  20
 declare i32  @getint()

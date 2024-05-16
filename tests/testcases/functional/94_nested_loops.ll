@@ -1,5 +1,5 @@
 ; ModuleID = 'cminus'
-source_filename = "/home/hq/SysY/tests/testcases/functional/94_nested_loops.sy"
+source_filename = "/home/hq/SysY_compiler/tests/testcases/functional/94_nested_loops.sy"
 
 @arr1 = global [10 x [2 x [3 x [4 x [5 x [6 x [2 x i32 ]]]]]]] zeroinitializer
 @arr2 = global [10 x [2 x [3 x [2 x [4 x [8 x [7 x i32 ]]]]]]] zeroinitializer

@@ -1,5 +1,5 @@
 ; ModuleID = 'cminus'
-source_filename = "/home/hq/SysY/tests/testcases/functional/44_stmt_expr.sy"
+source_filename = "/home/hq/SysY_compiler/tests/testcases/functional/44_stmt_expr.sy"
 
 @k = global i32  zeroinitializer
 @n = constant i32  10

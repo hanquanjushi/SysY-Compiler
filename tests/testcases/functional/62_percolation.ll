@@ -1,5 +1,5 @@
 ; ModuleID = 'cminus'
-source_filename = "/home/hq/SysY/tests/testcases/functional/62_percolation.sy"
+source_filename = "/home/hq/SysY_compiler/tests/testcases/functional/62_percolation.sy"
 
 @array = global [110 x i32 ] zeroinitializer
 @n = global i32  zeroinitializer

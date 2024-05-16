@@ -1,5 +1,5 @@
 ; ModuleID = 'cminus'
-source_filename = "/home/hq/SysY/tests/testcases/functional/48_assign_complex_expr.sy"
+source_filename = "/home/hq/SysY_compiler/tests/testcases/functional/48_assign_complex_expr.sy"
 
 declare i32  @getint()
 
